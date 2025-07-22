@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> selectors in css</title>
+    <style>
+        .yellow{
+            background-color: red;
+        }
+        #green{
+            background-color: blueviolet;
+        }
+        div p{
+            background-color: aqua;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selectors */
+        a:visited{
+            color: blueviolet;
+            background-color: chartreuse;
+        }
+        a:link{
+            color: aquamarine;
+        }
+        a:active{
+            background-color: rgb(68, 72, 78);
+        }
+        a:hover{
+            background-color: brown;
+        }
+    </style>
+ </head>
+ <body>
+    <div  class="yellow"> 
+        i am a web developer 
+</div>
+<div id="green">
+ i am a data scientist
+</div>
+<span>
+    <div >
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia delectus, tenetur cumque repudiandae fuga qui, et, odit esse quisquam doloremque atque? Hic.</p>
+    </div>
+    <div>
+        <a href="https://www,goole.com"> Go to Google </a>
+        <a href=" https://www,facebook.com"> gp to facebook</a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=1cEG1T8beO4&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=17"> go to harry </a>
+    </div>
+</span>
+ </body>
+ </html>
