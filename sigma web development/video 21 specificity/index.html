@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Specificity of the elements </title>
+    <style>
+        /* the specificity of univesal element * is 0 */
+        /* the specificity value of id is 100 */
+        /* the specificity of the element selector is 1 */
+        h1{
+            color: chartreuse;
+            background-color: brown;
+        }
+        /* the specificity of the class element is 10 */
+        .yellow{
+            color: yellow;
+            background-color: aquamarine;
+        }
+        /* the specificity of the class element is 10 */
+        .red{
+            color: red;
+            background-color: blue;
+        }
+        /* the specificity of the class element is 10 */
+        .green{
+            color: green;
+            background-color: darkgray;
+        }
+        /* the specificity of the attribute element is also 10 */
+      /* if the value of the specificity of the elements same then the specificity of that element apply who wrote at thr last */
+        [data-y=a]  {
+        color: crimson;
+        background-color: darkred;
+       }
+    </style>
+ </head>
+ <body>
+    <h1 class =" yellow red green" data-y="a">Lorem ipsum dolor sit.</h1>
+ </body>
+ </html>
