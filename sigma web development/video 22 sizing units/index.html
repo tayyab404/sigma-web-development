@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sizing units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 12px;
+      }
+      .box {
+        border: 2px solid black;
+        /* width: 2048px; */
+        background-color: brown;
+        /* vw is use for the responsiveness */
+        box-sizing: border-box;
+        width: 80vw;
+        height: 10vh;
+        /* its mean that from i put the margin automatically from left and right */
+        /* if it is a block level element it is implemanted for thr inline it is not implimented */
+        margin:auto;
+      }
+      .container{
+        border: 2px solid black;
+        /* width: 2048px; */
+        background-color: rgb(146, 97, 97);
+        /* vw is use for the responsiveness */
+        box-sizing: border-box;
+        width: 80vw;
+        /* its mean that from i put the margin automatically from left and right */
+        /* if it is a block level element it is implemanted for thr inline it is not implimented */
+        /* 23px is the top to bottom margin and auto is the left to right we can give the margin top to bottom and left to rigth by giving the space bt them */
+        margin: 23px auto;
+        /* 80% of the whole box */
+        height: 80vh;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">this is a box</div>
+    <div class="container">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo perferendis mollitia ex aut. Odit necessitatibus unde voluptatem ducimus laboriosam ullam ut, cupiditate repellendus sequi qui totam delectus quisquam in sit corrupti explicabo magni dolores doloremque! Veritatis quaerat accusantium quam cumque harum cum, itaque dolorum totam explicabo accusamus, sint consectetur voluptate, rerum non porro saepe modi ratione culpa. Placeat, accusantium?</p>
+
+    </div>
+  </body>
+</html>
