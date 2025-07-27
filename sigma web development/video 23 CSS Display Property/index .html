@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display properties</title>
+    <style>
+      *{
+          padding: 0;
+          margin: auto;
+      }
+      .box{
+          background-color: aqua;
+          color: blueviolet;
+          border: solid greenyellow;
+          display: inline-block;
+      }
+      .box2{
+
+        /* if we use the display none then it removes every thing also take place tye place of that element that which we ARE going to display none. */
+
+          /* display: none; */
+          
+          /* when we use the visibility hidden then it hides the content but also leave the place where tho original content take place. */
+
+          visibility: hidden;
+      }
+      .span{
+      color: chocolate;
+      border: soloid red;
+      display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box2">
+      that is a box
+      <div class="box">that is a seacond box</div>
+    </div>
+    <span class="span"> this is a in line element </span>
+    <span> that is the seacond span </span>
+  </body>
+</html>
